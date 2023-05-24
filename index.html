@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Подключение jQuery и jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Подключение стилей Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+    <!-- Подключение скрипта Slick Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/Ad.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/scroll-top.js"></script>
+    <title>Valentina_Guest_House</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header kontakts">
+
+
+            <p class=" header kontakts home"> <img class="icon" src="icons/home.svg" alt="home"> Абхазия, Цандрыпш,
+                ул.Октябрьская, д.492</p>
+            <div class="header kontakts mail-and-phone">
+
+                <p class="header kontakts mail"><img src="icons/Mail.svg" alt="mail">booking@valentinahouse.ru</p>
+
+                <p class="header kontakts phone"> <img src="icons/Phone.svg" alt="phone">8 (862) 279-56-89</p>
+
+            </div>
+
+        </div>
+
+        <!--2floor-->
+        <div class="header scndfloor">
+
+            <div class="header label-name">
+                <p>Valentina<br> Guest House</p>
+            </div>
+
+            <div class=" header main-menu">
+                <ul class="main-menu">
+                    <li class="main-menu chosen-item">Главная</li>
+                    <li class="main-menu">Номера и цены</li>
+                    <li class="main-menu">Статьи</li>
+                    <li class="main-menu">Информация</li>
+                    <li class="main-menu">Полный пансион</li>
+                </ul>
+            </div>
+
+            <div class="header scndfloor-social">
+                <a href="https://telegram.org" class="scndfloor-social-img" target="_blank">
+                    <img class="scndfloor-social-img" src="icons/telegram.svg" alt="tg">
+                </a>
+                <a href="https://web.whatsapp.com" class="scndfloor-social-img" target="_blank">
+                    <img class="scndfloor-social-img" src="icons/WhatsApp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.facebook.com" class="scndfloor-social-img" target="_blank">
+                    <img class="scndfloor-social-img" src="icons/Facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://vk.com" target="_blank" class="scndfloor-social-img">
+                    <img class="scndfloor-social-img" src="icons/VK.svg" alt="Vk" >
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="scndfloor-social-img" src="icons/inst.svg" alt="inst">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <button onclick="scrollToTop()" id="scrollToTopBtn">Наверх</button>
+
+        <div id="advertisement">
+            <p>Оставьте отзыв!</p>
+        </div>
+
+        <div class="container">
+            <img src="icons/img/Rectangle3.png" alt="bg" class="bg-image">
+            <div class="overlay">
+                
+                <div class="ui-datepicker-group">
+                    <p>Дата въезда</p>
+                    <input onclick="datepicker" id="datepicker" class="ui-datepicker-year">
+                </div>
+
+                <div class="ui-datepicker-group">
+                    <p>Дата выезда</p>
+                    <input onclick="datepicker2" id="datepicker2" class="ui-datepicker-year">
+                </div>
+                <div class="ui-datepicker-group">
+                    <p>Гостей</p>
+                    <select id="guests" name="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="ui-datepicker-group">
+                    <button type="submit">Проверить</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <p class="section label">Наши номера
+        <p>
+
+            <div class="flex-container-rooms">
+                <div class="item">
+                  <img class="flex-container item-1" src="icons/img/2mans.png" alt="2mans">
+                  <div class="item-overlay">
+                    <div class="item-text">
+                        <h2 class="type-of-room">2-х местный</h2>
+                        <ul class="about-room">
+                            <li>Площадь номера: 11 м2</li>
+                            <li>1 двуспальная кровать или 2 односпальные кровати</li>
+                            <li>Кондиционер</li>
+                            <li>Интернет</li>
+                            <li>Телевизор</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="flex-container item-2" src="icons/img/Deluxe.png" alt="deluxe">
+                  <div class="item-overlay">
+                    <div class="item-text">
+                        <h2 class="type-of-room"> Семейный</h2>
+                        <ul class="about-room">
+                            <li> Площадь номера: 18 м2</li>
+                            <li> 1 двуспальная кровать или 1 односпальная кровать</li>
+                            <li> Кондиционер </li>
+                            <li> Интернет </li>
+                                <li> Телевизор </li>
+                        </ul>
+                    </div>
+                        
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="flex-container item-3" src="icons/img/family.png" alt="femily">
+                  <div class="item-overlay">
+                    <div class="item-text">
+                        <h2 class="type-of-room"> Deluxe</h2>
+                    <ul class="about-room">
+                        <li>Площадь номера:30</li>
+                            <li> 1 двуспальная кровать или 1 раскладной диван</li>
+                            <li> Кондиционер</li>
+                            <li> Интернет</li>
+                            <li> Телевизор </li>
+                            <li> 2 комнаты </li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="flex-container item-4" src="icons/img/Deluxe+.png" alt="Deluxe+">
+                  <div class="item-overlay">
+                    <div class="item-text">
+                        <h2 class="type-of-room">Deluxe+</h2>
+                        <ul class="about-room">
+                            <li> Площадь номера: 45 м2</li>
+                                <li> 2 двуспальные кровати, 1 двуспальная кровать, 1 диван </li>
+                                <li> Кондиционер </li>
+                                <li> Интернет </li>
+                                <li> Телевизор </li>
+                                <li> 3 комнаты </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+
+        <h1 class="section">ГОСТЕВОЙ ДОМ «Valentina Guest House» , Абхазия </h1>
+
+        <div class="flex-container-about">
+            <img src="icons/img/Valentina.svg " alt="Valentina">
+            <p class="flex-container-about text-about">
+                Дорогие гости,<br>
+                Безопасность и комфорт гостей и персонала – это приоритет нашей работы.<br> <br>
+                Мы круглосуточно следим за тем, что Министерство здравоохранения  Российской Федерации, Федеральная
+                служба по надзору в сфере защиты  прав потребителей и Всемирная организация здравоохранения сообщают
+                о  распространении нового типа коронавируса (COVID-19) и беспрекословно выполняем рекомендации
+                этих организаций и местных органов здравоохранения.<br><br>
+                Мы искренне сочувствуем всем, кого коснулось это бедствие и с огромным уважением относимся к
+                врачам, местным сообществам и правительствам, которые задействованы в прямой борьбе с
+                распространением коронавируса.
+            </p>
+        </div>
+
+        <p class="section">ОТЗЫВЫ О НАС</p>
+        
+        <div class="flex-container-slider">
+            <div class="slider">
+                <div class="slider-item">
+                    <div>
+                        <p class="soso">Все было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в
+                            рабочем состоянии!</p>
+                    </div>
+                </div>
+                <div class="slider-item"><p class="flex-container-slider">Еда на высшем уровне! Отличный номер, уютный и комфортный; в номере чисто, все в
+                    рабочем состоянии!</p></div>
+                <div class="slider-item"><p class="flex-container-slider">Еда на высшем уровне! Отличный номер, уютный и комфортный; в номере чисто, все в
+                    рабочем состоянии!</p></div>
+                <div class="slider-item"><p class="flex-container-slider">Еда на высшем уровне! Отличный номер, уютный и комфортный; в номере чисто, все в
+                    рабочем состоянии!</p></div>
+                <div class="slider-item"><p class="flex-container-slider">Еда на высшем уровне! Отличный номер, уютный и комфортный; в номере чисто, все в
+                    рабочем состоянии!</p></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="frst-floor">
+            <div>
+                <p class="footer-p">Геолокация</p>
+                <div id="map"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8490.91853281586!2d40.03076008541384!3d43.38258087223101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5949e672f9c5d%3A0x4f35b42935423ba7!2sValentina%20Guest%20House!5e0!3m2!1sen!2sby!4v1684757626078!5m2!1sen!2sby" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div>
+                <p class="footer-p">Контакты</p>
+                <ul class="footer-ul">
+
+                    <li class="footer-text"> <img src="icons/phone_white.png" alt="phone"> 8 (862) 279-56-89</li>
+                    <li class="footer-text"> <img src="icons/home_white.png" alt="home"> ул.Октябрьская, д.492 </li>
+                    <li class="footer-text"> <img src="icons/geo.png" alt="geo"> Абхазия, Цандрыпш </li>
+                    <li class="footer-text"> <img src="icons/mail_white.png" alt="mail"> booking@valentinahouse.ru
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-p">Информация</p>
+                <Ul class="footer-ul">
+                    <Li class="footer-text" >Заезд: с 16:00</Li>
+                    <Li class="footer-text" >Выезд: до 12:00</Li>
+                    <Li class="footer-text" >Бесплатный WI-FI</Li>
+                    <Li class="footer-text" >Бесплатная парковка</Li>
+                    <Li class="footer-text" >О нас</Li>
+                    <Li class="footer-text" >Условия бронирования</Li>
+                    <Li class="footer-text" >Политика конфиденциальности</Li>
+                </Ul>
+            </div>
+            <div>
+                <p class="footer-p">Погода</p>
+          
+                <ul class="footer-ul icons-row">
+                    <li> <a href="https://www.facebook.com"  target="_blank"><img src="icons/faceboock_white.png" alt="facebook"></a> </li>
+                    <li> <a href="https://vk.com" target="_blank"><img src="icons/vk_white.png" alt="vk"></a></li>
+                    <li> <a href="https://www.instagram.com" target="_blank"> <img src="icons/inst_white.png" alt="inst"> </a></li>
+                    <li> <a href="https://telegram.org" target="_blank">  <img src="icons/tg_white.png" alt="tg"> </a></li>
+                    <li> <a href="https://web.whatsapp.com" target="_blank"> <img src="icons/WhatsApp_white.png" alt="whatsapp"> </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="scnd-floor">
+            <p>&#169;2015–2021 – VALENTINA GUEST HOUSE</p>
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>

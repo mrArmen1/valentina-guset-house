@@ -1,0 +1,388 @@
+html{
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#advertisement {
+  display: none;
+}
+body{
+    padding: 0;
+    margin:0;
+    font-family: Montserrat;
+    color: #585858; 
+       
+}
+/*header*/
+.header{
+
+    display: flex;
+}
+
+.kontakts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 400;
+    align-items: center;
+    width: auto;
+    white-space: nowrap;
+    margin-top: 1vh;
+}
+
+.mail-and-phone{
+width: 50%;
+}
+
+.chosen-item{
+    text-decoration: underline;
+    text-decoration-color: #3f8cff;
+    color: #3F8CFF;
+    text-decoration-thickness: 3px ;
+}
+
+.icon{
+    margin: 0 5% 0 5%;
+}
+.home{
+margin: 0 5% 0 5%;
+padding: 0% 2% 0 2%;
+}
+
+.mail{
+    margin: 0 5% 0 5%;
+    width: auto;
+}
+.mail img{
+    margin-right: 5%;
+}
+.phone{
+    margin: 0 5% 0 5%;
+    width: auto;
+}
+.phone img{
+    margin-right: 5%;
+}
+.scndfloor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.label-name{
+ font-size: 26px;
+ font-weight: 800;
+
+}
+.main-menu li{
+    margin: 0 5% 0 0;
+    list-style: none;
+    cursor: pointer;
+}
+.main-menu li:hover{
+    text-decoration: underline;
+    text-decoration-color: #3f8cff;
+    color: #3F8CFF;
+    text-decoration-thickness: 3px;
+   
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    text-transform:uppercase ;
+}
+
+/*main*/
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Добавленное свойство для создания тени */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень при наведении на кнопку */
+}
+
+.image{
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+    max-width: 800px; 
+  }
+  
+  .overlay p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ui-datepicker-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+  
+  input,
+  select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px; /* Adjust the height as needed */
+    font-size: 14px;
+    box-sizing: border-box; /* Add this property */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px; 
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(63, 140, 255, 0.5);
+  }
+  
+  
+
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.item {
+    position: relative;
+    font-size: 18px;
+}
+.type-of-room{
+  text-align: center;
+  padding: 0;
+}
+  
+.flex-container-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.about-room{
+  list-style: "-";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item-overlay {
+    position: absolute;
+    bottom: 28px;
+    left: 19px;
+    width: 94%;
+    height: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.3); /* Задайте нужный цвет и прозрачность */
+  }
+  
+  .item:hover .item-overlay {
+    opacity: 1;
+  }
+  
+  .item-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  
+
+.flex-container-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 75vw; 
+    padding: 10px; 
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .flex-container-about img {
+    margin-right: 10px; /* Add margin for the gap */
+  }
+  
+  .text-about {
+    margin-left: 10px; /* Add margin for the gap */
+  }
+
+footer{
+    background-color: #777777;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-row{
+    display: flex;
+}
+.scndfloor-social-img{
+    margin-right: 5%;
+}
+.frst-floor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   width: 100vw;
+white-space: nowrap;
+}
+.section{
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.scnd-floor{
+    background-color: #626262;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    color: #FFFFFF;
+
+}
+.footer-text{
+    font-weight: 500;
+    line-height: 25.28px;
+    font-size: 14px;
+}
+.footer-p{
+    font-weight: 600;
+
+    font-size: 20px;
+}
+
+.icons-row li{
+    margin-right: 1vw;
+}
+.flex-container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.slider {
+    width:  70%;
+    margin: 0 auto;
+    background: #3F8CFF;
+    box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  .slider-item {
+   
+    width:  600px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 6px;
+    line-height: 24px;
+    margin: 0 10px;
+
+  }
+
+.slick-prev,
+.slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: #3F8CFF;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+
+      text-align: center;
+      line-height: 24px;
+      cursor: pointer;
+    }
+.slick-prev {
+      left: -40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.slick-next {
+      right: -40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.footer-ul{
+    padding: 0;
+    margin-left: 2%;
+    list-style: none;
+}
